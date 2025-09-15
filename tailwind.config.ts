@@ -57,6 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Minigolf scene colors
+        grass: {
+          primary: "hsl(var(--grass-primary))",
+          secondary: "hsl(var(--grass-secondary))",
+          light: "hsl(var(--grass-light))",
+        },
+        sky: {
+          top: "hsl(var(--sky-top))",
+          bottom: "hsl(var(--sky-bottom))",
+        },
+        tree: {
+          trunk: "hsl(var(--tree-trunk))",
+          foliage: "hsl(var(--tree-foliage))",
+        },
+        hill: {
+          base: "hsl(var(--hill-base))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
