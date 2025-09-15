@@ -6,7 +6,7 @@ const SimpleTree = ({ position }: { position: [number, number, number] }) => {
   const groupRef = useRef<Group>(null);
 
   const trunkMaterial = new THREE.MeshLambertMaterial({ 
-    color: new THREE.Color('hsl(25, 40%, 30%)') 
+    color: new THREE.Color('hsl(25, 45%, 25%)') 
   });
 
   const foliageMaterial = new THREE.MeshLambertMaterial({ 
@@ -15,9 +15,9 @@ const SimpleTree = ({ position }: { position: [number, number, number] }) => {
 
   return (
     <group ref={groupRef} position={position}>
-      {/* Tree trunk */}
-      <mesh position={[0, 0.8, 0]} castShadow>
-        <cylinderGeometry args={[0.15, 0.2, 1.6, 8]} />
+      {/* Enhanced tree trunk - taller and more visible */}
+      <mesh position={[0, 1.2, 0]} castShadow>
+        <cylinderGeometry args={[0.18, 0.25, 2.4, 8]} />
         <primitive object={trunkMaterial} />
       </mesh>
 
@@ -43,6 +43,7 @@ const SimpleTree = ({ position }: { position: [number, number, number] }) => {
 export const Trees = () => {
   return (
     <group>
+      {/* Original trees */}
       <SimpleTree position={[-12, 0, -8]} />
       <SimpleTree position={[10, 0, -12]} />
       <SimpleTree position={[-15, 0, 6]} />
@@ -51,6 +52,20 @@ export const Trees = () => {
       <SimpleTree position={[-8, 0, 14]} />
       <SimpleTree position={[14, 0, -2]} />
       <SimpleTree position={[-6, 0, -14]} />
+      
+      {/* Additional trees for denser forest */}
+      <SimpleTree position={[12, 0, 8]} />
+      <SimpleTree position={[-10, 0, -12]} />
+      <SimpleTree position={[16, 0, 4]} />
+      <SimpleTree position={[-18, 0, -2]} />
+      <SimpleTree position={[5, 0, -16]} />
+      <SimpleTree position={[-4, 0, 18]} />
+      <SimpleTree position={[18, 0, -8]} />
+      <SimpleTree position={[-14, 0, 12]} />
+      <SimpleTree position={[2, 0, -18]} />
+      <SimpleTree position={[-20, 0, 0]} />
+      <SimpleTree position={[20, 0, -6]} />
+      <SimpleTree position={[-2, 0, -20]} />
     </group>
   );
 };

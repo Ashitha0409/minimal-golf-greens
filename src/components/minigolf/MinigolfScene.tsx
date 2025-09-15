@@ -3,6 +3,7 @@ import { OrbitControls, Sky } from '@react-three/drei';
 import { Terrain } from './Terrain';
 import { Trees } from './Trees';
 import { Hills } from './Hills';
+import { Clouds } from './Clouds';
 
 export const MinigolfScene = () => {
   return (
@@ -45,6 +46,7 @@ export const MinigolfScene = () => {
         <Terrain />
         <Hills />
         <Trees />
+        <Clouds />
 
         {/* Camera Controls */}
         <OrbitControls
