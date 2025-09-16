@@ -44,28 +44,28 @@ export const Trees = () => {
   return (
     <group>
       {/* Original trees */}
-      <SimpleTree position={[-12, 0, -8]} />
-      <SimpleTree position={[10, 0, -12]} />
-      <SimpleTree position={[-15, 0, 6]} />
-      <SimpleTree position={[8, 0, 12]} />
-      <SimpleTree position={[0, 0, 15]} />
-      <SimpleTree position={[-8, 0, 14]} />
-      <SimpleTree position={[14, 0, -2]} />
-      <SimpleTree position={[-6, 0, -14]} />
+      <SimpleTree position={[-14, 0, -10]} />
+      <SimpleTree position={[12, 0, -14]} />
+      <SimpleTree position={[-18, 0, 8]} />
+      <SimpleTree position={[10, 0, 16]} />
+      <SimpleTree position={[0, 0, 18]} />
+      <SimpleTree position={[-10, 0, 18]} />
+      <SimpleTree position={[18, 0, -4]} />
+      <SimpleTree position={[-8, 0, -18]} />
       
       {/* Additional trees for denser forest */}
-      <SimpleTree position={[12, 0, 8]} />
-      <SimpleTree position={[-10, 0, -12]} />
-      <SimpleTree position={[16, 0, 4]} />
-      <SimpleTree position={[-18, 0, -2]} />
-      <SimpleTree position={[5, 0, -16]} />
-      <SimpleTree position={[-4, 0, 18]} />
-      <SimpleTree position={[18, 0, -8]} />
-      <SimpleTree position={[-14, 0, 12]} />
-      <SimpleTree position={[2, 0, -18]} />
-      <SimpleTree position={[-20, 0, 0]} />
-      <SimpleTree position={[20, 0, -6]} />
-      <SimpleTree position={[-2, 0, -20]} />
+      <SimpleTree position={[14, 0, 10]} />
+      <SimpleTree position={[-12, 0, -14]} />
+      <SimpleTree position={[18, 0, 6]} />
+      <SimpleTree position={[-20, 0, -4]} />
+      <SimpleTree position={[7, 0, -18]} />
+      <SimpleTree position={[-6, 0, 20]} />
+      <SimpleTree position={[20, 0, -10]} />
+      <SimpleTree position={[-16, 0, 14]} />
+      <SimpleTree position={[4, 0, -20]} />
+      <SimpleTree position={[-22, 0, 0]} />
+      <SimpleTree position={[22, 0, -8]} />
+      <SimpleTree position={[0, 0, -22]} />
     </group>
   );
 };

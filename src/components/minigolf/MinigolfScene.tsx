@@ -4,13 +4,14 @@ import { Terrain } from './Terrain';
 import { Trees } from './Trees';
 import { Hills } from './Hills';
 import { Clouds } from './Clouds';
+import { GolfMap } from './GolfMap';
 
 export const MinigolfScene = () => {
   return (
     <div className="w-full h-screen bg-gradient-to-b from-sky-top to-sky-bottom">
       <Canvas
         camera={{ 
-          position: [8, 6, 8], 
+          position: [15, 10, 15], 
           fov: 60,
           near: 0.1,
           far: 1000
@@ -43,6 +44,7 @@ export const MinigolfScene = () => {
         />
 
         {/* Scene Components */}
+        <GolfMap />
         <Terrain />
         <Hills />
         <Trees />
@@ -54,9 +56,9 @@ export const MinigolfScene = () => {
           enableZoom={true}
           enableRotate={true}
           minDistance={5}
-          maxDistance={25}
-          minPolarAngle={Math.PI / 6}
-          maxPolarAngle={Math.PI / 2.2}
+          maxDistance={50}
+          minPolarAngle={Math.PI / 8}
+          maxPolarAngle={Math.PI / 1.5}
         />
       </Canvas>
     </div>
